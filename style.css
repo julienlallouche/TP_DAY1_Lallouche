@@ -1,0 +1,530 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+  }
+
+
+
+
+/**********----------***********/
+/**********| MOBILE |**********/
+/**********----------*********/
+
+/*-------------------- HEADER --------------------*/
+    
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    background-color: white;
+}
+
+.logo_iut{
+    width: 130px;
+    padding-left: 4px;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav a{
+    text-transform: uppercase;
+    padding: 33px 15px;
+    color:#000;
+}
+
+
+
+/*-------------------- Contenu des articles -> haut de page --------------------*/
+
+ .inner_main_container{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+/* 1) Contenu de l'article fond orange */
+/*    -------------------------------- */
+
+
+ .left_article{
+     display: flex;
+     position: relative;
+ }
+
+ /* - bloc texte appartenant à l'article fond orange*/
+
+ .left_article .bloc_texte{  
+    position: absolute;
+    width: 55%;
+    bottom: 13%;
+    left: 5%;
+    padding: 13px;
+    font-size: 8px;
+    color: white;
+    border-radius: 10px;
+    background-color: #ff7043;
+ }
+
+ .bloc_texte h1{
+    padding-bottom: 20px;
+ }
+
+ /* - attribution de la couleur pour les articles haut de page */
+
+.left_article a, .right_article a{ 
+    color: white;
+}
+
+
+/* 2) Contenu des articles secondaires */
+/*    -------------------------------- */
+
+
+/* - attribution des couleurs pour les articles secondaires haut de page */
+
+.inner_main_container .right_article article:nth-child(1) {
+        background-color: #c62828;
+}
+.inner_main_container .right_article article:nth-child(2) {
+        background-color: #5c6bc0;
+}
+
+
+.right_article{
+    display: flex;
+    flex-direction: column;
+}
+
+/* - Taille 100% de la page -> Mobile */
+
+.right_article article{
+    width: 100%;
+}
+
+/* - Conception du bloc descriptif -> articles */
+
+.right_article .bloc_description{
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    height: 80px;
+}
+
+ul.tags {
+    padding: 7px;
+}
+
+.tags a{
+    font-size: 15px;
+}
+
+
+/*-------------------- Contenu des articles -> bas de page --------------------*/
+
+
+
+.inner_main-container_bas{
+    padding: 17px;
+    background-color: #e0e0e0;
+    width: 100%;
+
+}
+
+/* 1) Contenu des articles */
+/*    --------------------*/
+
+.container_articles{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+ }
+
+ /* 2) Contenu de chaque article */
+/*     -------------------------*/
+
+ .inner_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+ /* 3) Contenu des images de chaque article */
+/*     ------------------------------------*/
+
+
+ .inner_article_img{
+    width: 100%;
+    text-align: center;
+ }
+
+ .inner_article_img img{
+     border-radius: 5px;
+     width: 100%;
+ }
+
+/* 4) Texte pour chaque article */
+/*    -------------------------*/
+
+
+ .inner_article .description_img{
+     font-size: 11px;
+     width: 100%;
+     padding-top: 13px;
+ }
+
+
+
+/*-------------------- Container Formulaire --------------------*/
+
+/* 1) Container qui englobe tout le formulaire */
+/*    ----------------------------------------*/
+
+.container_formulaire{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 3px;
+}
+
+/* 2) Styles Formulaire */
+/*    -----------------*/
+
+.container_formulaire h2{
+    text-align: center;
+}
+
+.container_formulaire form{
+    display: flex;
+    flex-direction: column; 
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.container_formulaire input{
+    width: 100%;
+    margin: 3px;
+}
+
+ .container_formulaire label{
+    padding: 15px 0 0 5px;
+}
+
+
+/* 3) Bouton -> Envoyer */
+/*    -----------------*/
+
+.bouton{
+    background-color: #5677fc;
+    border-radius: 2px;
+    font-weight: 500;
+    padding: .45em .938em .5em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/*-------------------- Container Formulaire --------------------*/
+
+footer{
+    height: 29px;
+    background-color: black;
+    width: 100%;
+}
+
+
+
+
+
+/**********------------***********/
+/**********| TABLETTE |**********/
+/**********------------*********/
+
+
+/* Format paysage -> téléphone + Format portrait -> tablette */
+
+
+@media screen and (min-width: 481px) {
+
+    .logo_iut{
+        width: 190px;
+        padding-left: 4px;
+    }
+
+    .nav a{
+        font-size: 18px;
+    }
+
+
+/*-------------------- Contenu des articles -> haut de page --------------------*/
+
+
+    /* - bloc texte appartenant à l'article principal fond orange */
+
+    .left_article .bloc_texte{  
+        width: 357px;
+    }
+    
+    .left_article .bloc_texte{  
+        font-size: 15px;
+        padding: 15px;
+    }
+
+
+    /* - On l'adapte pour la partie tablette -> articles côte à côte*/
+
+    .right_article{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .right_article article{
+        width: 50%;
+    }
+
+    /* - Adaptation des textes */
+
+    .right_article .bloc_description{
+        font-size: 9px;
+    }
+
+/*-------------------- Contenu des articles -> bas de page --------------------*/
+
+    .inner_article .description_img{
+        font-size: 15px;
+    }
+   
+
+    /*-------------------- Container Formulaire --------------------*/
+
+    /* - Adaptation / Mise en forme des textes et blocs */
+
+    .container_formulaire form{
+        font-size: 20px;
+        width: 53%;
+    }
+    .container_formulaire input{
+        margin: 7px;
+        padding: 4px;
+    }
+    
+    .container_formulaire label{
+        padding: 15px 0 0 5px;
+    }
+    
+    .bouton{
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+/**********------------***********/
+/**********| TABLETTE |**********/
+/**********------------*********/
+
+
+/* Format paysage -> tablette + Format ordinateur */
+
+@media screen and (min-width: 769px) {
+
+    /*-------------------- HEADER --------------------*/
+
+    .logo_iut{
+        width: 235px;
+    }
+    header a{
+        padding: 30px;
+        font-size: 1.2rem;
+    }
+
+    /*-------------------- Contenu des articles -> haut de page --------------------*/
+
+    .img_left_article{
+        display: flex;
+    }
+        
+    .left_article{
+        width: 65%;
+    }
+
+    .left_article_img{
+        display: flex;
+    }
+
+
+     /* 1) Contenu des articles secondaires */
+    /*     -------------------------------- */
+
+    .right_article{
+        flex-direction: column;
+        width: 35%;
+    }
+
+    .right_article article {
+        width: 100%;
+    }
+    
+    .tags a{
+        font-size: 18px;
+    }
+
+
+    /*-------------------- Contenu des articles -> bas de page --------------------*/
+
+    .inner_main-container_bas{
+        display: flex;
+        padding: 0px;
+        flex-direction: row;
+    }
+
+
+    /* 1) Contenu des articles */
+    /*    --------------------*/
+
+    .container_articles{
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+
+    /* 2) Contenu de chaque article */
+    /*     -------------------------*/
+
+    .inner_article{
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    
+    /* 3) Contenu des images de chaque article */
+    /*     ------------------------------------*/
+
+    .inner_article_img img{
+        width: 80%;
+    }
+
+
+    /* 4) Texte pour chaque article */
+    /*    -------------------------*/
+
+    .inner_article .description_img{
+        font-size: 14px;
+    }
+
+
+    .inner_article p{
+        padding-top: 10px;
+    }
+
+
+    /*-------------------- Container Formulaire --------------------*/
+
+    .container_formulaire{
+        padding-top: 28px;
+        width: 43%;
+    }
+
+    .container_formulaire input{
+        width: 100%;
+        height: 31px;
+    }
+
+    .container_formulaire form{
+        font-size: 19px;
+        width: 70%;
+    }
+
+    .bouton {
+        width: 35%;
+        height: 35px;
+        margin-left: 50px;
+    }
+
+    input#envoyer {
+        width: 102px;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+
+}
+
+/**********------------***********/
+/**********| DESKTOP |**********/
+/**********------------*********/
+
+@media screen and (min-width: 1280px) {
+
+    /*-------------------- MAIN CONTAINER --------------------*/
+    
+    /* - On ajuste la page tout en la positionnant au centre */
+
+    .main_container{
+        max-width: 960px;
+        margin: auto;
+    }
+
+
+    .logo_iut{
+        width: 235px;
+    }
+
+    .nav a{
+        font-size: 21px;
+    }
+
+    header a:hover{
+        background-color: #37474f;
+        color: #fff; 
+        text-decoration: none;
+    }
+
+
+/*-------------------- Contenu des articles -> haut de page --------------------*/
+
+
+    /* - bloc texte appartenant à l'article principal*/
+
+    .left_article .bloc_texte{  
+        width: 400px;
+    }
+    
+    .left_article .bloc_texte{  
+        font-size: 15px;
+        padding: 30px;
+    
+    }
+
+
+}

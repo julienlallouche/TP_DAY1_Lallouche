@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1_Lallouche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- container principal de la page -->
+
+    <div class="main_container">
+
+        <!-- Header Navbar -->
+
+        <header>
+            <div class="logo_iut">
+                <img src="https://iut.univ-amu.fr/sites/iut.univ-amu.fr/themes/web_template/images/logo_iut.png" alt="Logo IUT Aix-Marseille">
+            </div>
+                <ul class="nav">
+                    <li>
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+        </header>
+
+        <!-- Container Principal composé d'un article ainsi que de deux articles -->
+
+        <div class="inner_main_container">
+
+            <!-- Article fond orange -->
+            
+            <div class="left_article">
+                <div class="img_left_article"> <!-- Image de fond - article -->
+                    <img src="https://think.storage.googleapis.com/images/mm-guide-be-there-hp-hero.jpg" alt="Article principal">
+                </div>
+                <div class="bloc_texte"> <!-- Permet de mettre un "absolute" sur le contenu de l'article -->
+                    <h1>
+                        <a href="#">Titre de l'article 11 </a>
+                    </h1>
+            
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            
+            <!-- Contenu des deux articles -->
+
+            <div class="right_article">
+                <article>
+                    <div>
+                        <img src="https://think.storage.googleapis.com/images/winning-omni-channel-shoppers-micro-moments-bn.jpg" alt="Femme marchant sur un passage pietant en plein centre-ville">
+                    </div>
+                    <div class="bloc_description">
+                        <h2>
+                            <a href="#">Video Micro-Moments: What Do They Mean for Your Video Strategy?</a>
+                        </h2>
+                        <ul class="tags">
+                            <li>
+                                <a href="#">Vidéo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div >
+                        <img src="https://think.storage.googleapis.com/images/video-micro-moments-what-do-they-mean-for-your-video-strategy-lg.jpg" alt="femme se maquillant face à un miroir">
+                    </div>
+                    <div class="bloc_description">
+                        <h2>
+                            <a href="#">Winning Omni-Channel Shoppers in Their Micro-Moments</a>
+                        </h2>
+                        <ul class="tags">
+                            <li>
+                                <a href="#">Mobile</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Container Articles composé des 3 articles -->
+
+        <div class="inner_main-container_bas">
+            <div class="container_articles">
+
+                <!-- Premier Article -->
+
+                <article class="inner_article">  <!-- Attribution d'un même nom de classe pour les 3 articles -->
+                    <div class="inner_article_img"> <!-- Attribution d'un même nom de classe pour les images des 3 articles -->
+                        <img src="https://think.storage.googleapis.com/images/mm_betterstrategy_454x255.png" alt=" logo Better-Strategy">  
+                    </div>
+                    <div class="description_img">
+                        <h2>Titre de l'article</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <ul class="tags">
+                            <li>
+                                <a href="#">Vidéo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Deuxième Article -->
+
+                <article class="inner_article">
+                    <div class="inner_article_img">
+                        <img src="https://think.storage.googleapis.com/images/micro-moments-shopper-journey-report-harvard-business-review-1-sm.jpg" alt="28% des ventes en magasin ont été influencées par des smartphones">
+                    </div>
+                    <div class="description_img">
+                        <h2>Titre de l'article</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <ul class="tags">
+                            <li>
+                                <a href="#">Vidéo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Troisième Article -->
+
+                <article class="inner_article">
+                    <div class="inner_article_img">
+                        <img src="https://think.storage.googleapis.com/images/how-moms-use-youtube-videos-new-trends-and-insights-sm-1.jpg" alt="Une mère accompagnée de son enfant assis sur une chaise entrain de regarder l'écran d'un ordinateur">
+                    </div>
+                    <div class="description_img">
+                        <h2>Titre de l'article</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <ul class="tags">
+                            <li>
+                                <a href="#">Vidéo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+
+            <!-- container Formulaire -->
+
+            <div class="container_formulaire">
+
+                <h2>Contactez-nous</h2>
+
+                <form action="#">
+                    <label for="nom">Nom : </label>
+                    <input type="text" name="nom" id="nom">
+
+                    <label for="pre">Prénom : </label>
+                    <input type="text" name="prenom" id="prenom">
+
+                    <label for="societe">Société : </label>
+                    <input type="text" name="societe" id="societe">
+
+                    <label for="tel">Téléphone : </label>
+                    <input type="tel" name="tel" id="tel">
+
+                    <label for="email">Email* : </label>
+                    <input type="email" name="email" id="email" required>
+
+                    <input class="bouton" type="submit" value="Envoyer" id="envoyer">
+                </form>
+            </div>
+            
+        </div>
+
+        <!-- Container Footer -->
+        
+        <footer></footer>
+       
+    </div>
+</body>
+</html>
